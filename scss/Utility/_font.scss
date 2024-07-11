@@ -1,0 +1,58 @@
+// フォント調整用
+@use"../Fundation/base";
+
+
+.u-font__background-title{
+    font-weight: 700;
+    font-size  : 3rem;
+}
+
+.u-font__map-title{
+    font-size  : 1.5rem;
+    font-weight: 700;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.u-roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color      : base.$SideBase;
+    &__side-title{
+        font-size: 2.5rem;
+        color: base.$White;
+    }
+}
+
+
+.u-m-1p-regular {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color      : base.$SideBase;
+  &__brown{
+    color: base.$FontBase;
+  }
+  &__white{
+    color: base.$White;
+  }
+}
+
+.u-m-1p-bold {
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color      : base.$SideBase;
+  &__brown{
+    color: base.$FontBase;
+  }
+  &__white{
+    color: base.$White;
+  }
+}
+

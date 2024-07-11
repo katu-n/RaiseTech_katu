@@ -1,0 +1,13 @@
+//mixinCSS
+
+$breakpoints:(
+    'sp': 'screen and (max-width:376px)',
+    'tb': 'screen and (max-width:769px)',
+    'pc': 'screen and (max-width:1001px)'
+);
+
+@mixin mq($breakpoint){
+    @media #{map-get($breakpoints,$breakpoint)}{
+        @content;
+    }
+}

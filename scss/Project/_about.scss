@@ -1,0 +1,70 @@
+// そのページのみで使うcss
+@use"../Fundation/base";
+@use"../Fundation/mixin";
+
+
+.p-about__flex{
+    margin: 8%;
+    display: flex;
+    justify-content: space-between;
+    @include mixin.mq(tb){
+        flex-direction: column;
+    }
+}
+
+.p-about__sub-content-wrapper{
+        width    : 47%;
+        @include mixin.mq(tb){
+        width:   100%;
+        margin-bottom: 5%;
+        }
+}
+.p-about__background-firstimg{
+    background: url(../../mainvisual-img/top-side-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.p-about__background-secondimg{
+    background: url(../../mainvisual-img/to0-side-2.png);
+    background-size: cover;
+    background-position: center;
+}
+
+// map
+.p-about__map{
+        position        : relative;
+        &-back{
+        position        : absolute;
+        z-index         : 1;
+        background-color: rgba($color: #000000, $alpha: 0.2);
+        width           : 100%;
+        height          : 100%;
+        }
+
+    &-content{
+    position            : absolute;
+    z-index             : 1;
+    background-color    : rgba($color: #000000, $alpha: 0.2);
+    width               : 60%;
+    height              : 100%;
+    @include mixin.mq(pc){
+        width           : 100%;
+    }
+    &-wrapper{
+    margin              : 12.5%;
+    }
+    }
+
+    &-underbar{
+    width               : 8%;
+    border              : 1px solid;
+    margin              : 6% 0;
+    }
+}
+
+
+.p-about__underbar{
+    width: 14%;
+    border-bottom:4px solid ;
+}

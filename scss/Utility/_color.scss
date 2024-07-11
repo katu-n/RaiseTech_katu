@@ -1,0 +1,23 @@
+// カラー調整用
+
+@use"../Fundation/base";
+
+.u-header__back{
+    background-color: base.$HeaderBase;
+}
+
+.u-header__title{
+    color: base.$SideBase;
+}
+
+.u-font__side-title{
+    color: base.$SideBase;
+}
+
+.u-color-brown{
+    color: base.$FontBase;
+}
+
+.u-color-white{
+    color: base.$White;
+}
