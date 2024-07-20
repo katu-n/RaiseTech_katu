@@ -5,6 +5,7 @@
     margin-left: 13.6%;
 }
 .l-sidebar{
+        transition: right 0.3s ease;
         &__main{
         margin-top       : 21%;
         }
@@ -13,9 +14,9 @@
         }
 
         &__sub-content{
-        margin-left      : 6%;
-        margin-top       : 11%;
-        margin-bottom:   17%;
+        margin-left  : 6%;
+        margin-top   : 11%;
+        margin-bottom: 17%;
         li{
         color            : base.$SideBase;
         margin-bottom:   5%;
@@ -24,8 +25,11 @@
         &__title{
         width            : 4.5%;
         margin-top       : 27%;
-        font-size        : 1.5rem;
         cursor: pointer;
+        @include mixin.rem(24px);
+        @include mixin.mq(pc){
+            display: none;
+        }
         }
 
 }

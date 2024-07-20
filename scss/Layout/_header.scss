@@ -17,12 +17,15 @@
 .l-header__title{
     width: 17%;
     height: auto;
-    padding: 3%;
+    padding: 4%;
+    @include mixin.rem(64px);
 
     @include mixin.mq(pc){
         width: auto;
         padding-bottom: 0;
+        margin: 4%;
         margin-top: 2%;
+        @include mixin.rem(40px);
     }
 
 }
