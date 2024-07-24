@@ -1,6 +1,0 @@
-@use"../../fundation/mixin";
-
-.archive-wrapper{
-    @include mixin.rate(margin-left,1553px,100px);
-    @include mixin.rate(margin-right,1553px,100px);
-}
