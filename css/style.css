@@ -311,6 +311,67 @@ article {
     width: 100%;
   }
 }
+.archive-wrapper {
+  margin-left: 6.4391500322%;
+  margin-right: 6.4391500322%;
+}
+
+.c-backimg {
+  height: 239px;
+  background: url(../../../mainvisual-img/page-title_arcive@2x.jpg) no-repeat;
+  background-size: cover;
+  background-position: 0 50%;
+  position: relative;
+}
+.c-backimg__black {
+  position: absolute;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+.c-backimg__content {
+  margin-left: 5%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.c-backimg__wrapper {
+  display: flex;
+  align-items: center;
+  z-index: 100;
+}
+@media screen and (max-width:769px) {
+  .c-backimg__wrapper {
+    flex-direction: column;
+  }
+}
+.c-backimg__topic {
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+  margin-top: 1rem;
+}
+.c-backimg__title {
+  color: #FFFFFF;
+  font-size: 3.75rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width:769px) {
+  .c-backimg__title {
+    font-size: 2.25rem;
+  }
+}
+
 .c-btn {
   display: flex;
   justify-content: center;
@@ -323,6 +384,16 @@ article {
   border-radius: 10px;
   background-color: #F2EDE9;
   color: #707070;
+  cursor: pointer;
+}
+.c-btn__archive {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 43.1314623338%;
+  margin: 5% 0;
+  border-radius: 10%;
+  background-color: #FFFFFF;
   cursor: pointer;
 }
 
@@ -471,6 +542,33 @@ article {
   width: 14%;
 }
 
+.c-subtext {
+  margin-top: 5%;
+}
+.c-subtext__title {
+  font-size: 2.25rem;
+  margin-bottom: 2%;
+}
+.c-subtext__content {
+  margin-bottom: 5%;
+}
+
+.c-card {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.c-card__img {
+  width: 50%;
+  background: url(../../../mainvisual-img/archive_content.png) no-repeat;
+  background-size: cover;
+}
+.c-card__text {
+  width: 50%;
+  background-color: #3C2A10;
+  padding: 11.2526539278%;
+}
+
 .u-font__background-title {
   font-weight: 700;
   font-size: 3rem;
@@ -516,7 +614,7 @@ article {
   color: #707070;
 }
 
-.u-font__side-title {
+.u-7070 {
   color: #707070;
 }
 

@@ -1,4 +1,5 @@
-@use"../../Fundation/mixin";
+@use"../../fundation/mixin";
+@use"../../fundation/base";
 
 
 .c-btn {
@@ -14,6 +15,16 @@
   background-color: #F2EDE9;
   color: #707070;
   cursor: pointer;
+  &__archive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include mixin.rate(width,677px,292px);
+  margin: 5% 0;
+  border-radius: 10%;
+  background-color: base.$White;
+  cursor: pointer;
+  }
 }
 @include mixin.mq(tb){
   .c-btn {

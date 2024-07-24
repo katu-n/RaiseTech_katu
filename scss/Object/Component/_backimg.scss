@@ -1,0 +1,55 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+
+.c-backimg{
+         height                 :       239px;
+         background             :       url(../../../mainvisual-img/page-title_arcive@2x.jpg) no-repeat;
+         background-size        :       cover;
+         background-position    :       0                                                     50%;
+         position               :       relative;
+         &__black{
+         position               :       absolute;
+         z-index                :       100;
+         background-color:      rgba(0, 0,                                                    0,   0.5);
+         width                  :       100%;
+         height                 :       100%;
+         }
+         &__content{
+         margin-left            :       5%;
+         height                 :       100%;
+         display                :       flex;
+         align-items            :       center;
+         }
+         &__wrapper{
+         display      : flex;
+         align-items: center;
+         z-index      : 100;
+         @include               mixin.mq(tb){
+         flex-direction         :       column;
+         }
+         }
+         &__topic{
+         color                  :       #FFFFFF;
+         display                :       flex;
+         align-items            :       center;
+         font-family            :       "M PLUS 1p", sans-serif;
+         font-weight            :       700;
+         font-style             :       normal;
+         @include               mixin.rem(16px);
+         margin-left            :       0.5rem;
+         margin-top             :       1rem;
+}
+&__title{
+         color                  :       base.$White;
+         @include               mixin.rem(60px);
+         font-family            :       "Roboto",   sans-serif;
+         font-weight            :       700;
+         font-style             :       normal;
+         display                :       flex;
+         align-items            :       center;
+         @include               mixin.mq(tb){
+         @include               mixin.rem(36px);
+         }
+}
+
+}

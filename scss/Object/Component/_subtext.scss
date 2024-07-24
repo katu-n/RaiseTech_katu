@@ -1,0 +1,13 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+
+.c-subtext{
+    margin-top: 5%;
+    &__title{
+        @include mixin.rem(36px);
+        margin-bottom: 2%;
+    }
+    &__content{
+        margin-bottom: 5%;
+    }
+}
