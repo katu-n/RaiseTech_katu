@@ -1,0 +1,115 @@
+@use"../fundation/mixin";
+@use"../fundation/base";
+
+
+.l-humberger__overlay{
+    display         : none;
+    position        : fixed;
+    background-color: rgba(0, 0, 0,.5);
+    width           : 100%;
+    height          : 100%;
+    top             : 0;
+    left            : 0;
+    right           : 0;
+    bottom          : 0;
+}
+
+.l-humberger__btn{
+    display: none;
+}
+
+@include mixin.mq(pc) {
+
+    .l-humberger{
+        position  : absolute;
+        right     : -450px;
+        transition:0.3s ease-in-out;
+            top               : 0;
+            width             : 43%;
+            height            : 100%;
+            background-color: base.$btnBase;
+        &__btn{
+            display   : block;
+            margin-top: 0;
+            position  : absolute;
+            top       : 11px;
+            right     : 20px;
+            cursor: pointer;
+        }
+        &__nav{
+            transition: 0s;
+            z-index   : 100;
+            margin-top: 40%;
+        }
+    }
+    .open{
+        &.l-humberger{
+            display           : block;
+            position          : fixed;
+            z-index           : 100;
+            overflow-y        : auto;
+            transform: translateX(-450px);
+            @include mixin.mq(tb){
+                transform: translateX(-650px);
+            }
+            &__fixed{
+                position        :fixed;
+            }
+            &__btn{
+                display         : none;
+            }
+            &__toggle{
+
+            display             : block;
+            z-index             : 150;
+            cursor              : pointer;
+            span {
+                    width           : 11%;
+                    height          : 6px;
+                    right           : 4%;
+                    display         : block;
+                    background-color: base.$SideBase;
+                    position        : absolute;
+                    transition      : 0s;
+                    &:nth-child(1){
+                    top             : 25px;
+                    transform       : rotate(45deg);
+                    }
+                    &:nth-child(2){
+                        top               : 25px;
+                        transform:        rotate(-45deg);
+                        }
+                    @include mixin.mq(tb){
+                        width:            9%;
+                        right:            1%;
+                    }
+            }
+            }
+        }
+     
+        &.l-humberger__overlay{
+            display             : block;
+            z-index             : 50;
+        }
+    }
+
+    .close {
+        &.l-humberger{
+            position: fixed;
+        }
+    }
+    
+}
+
+
+
+@include mixin.mq(tb){
+    .l-humberger{
+        @include mixin.rate(width,375px,328px);
+        right: -650px;
+        &__btn{
+            top:8px;
+            right: 11px;
+        }
+    }
+}

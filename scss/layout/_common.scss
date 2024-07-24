@@ -1,0 +1,42 @@
+// 共通部分
+@use"../fundation/mixin";
+@use"../fundation/base";
+
+a{
+    text-decoration : none;
+}
+ul{
+    list-style      : none;
+}
+iframe{
+    width           : 100%;
+}
+.l-main__wrapper{
+    display         : flex;
+    flex-direction  : row;
+    width           : 100%;
+    margin          : 0;
+    padding         : 0;
+}
+
+aside{
+    // width           : 20%;
+    // @include mixin.rate(width, 1921px, 368px);
+    width: 24%;
+    background-color: base.$btnBase;
+}
+article{
+    background-color: base.$BackBase;
+}
+
+.l-main__colum{
+ display            : flex;
+ flex-direction     : column;
+ width              : 100%;
+}
+
+.l-common__second-img{
+    height          : 380px;
+    background-color: base.$Black;
+    border          : 1px solid base.$SideBase;
+}

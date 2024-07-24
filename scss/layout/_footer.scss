@@ -1,0 +1,29 @@
+// footer
+@use"../fundation/base";
+@use"../fundation/mixin";
+.l-footer__content{
+                text-align         : center;
+                background         : url(../../mainvisual-img/footer.png);
+                background-position: 0               -10%;
+                color              : base.$White;
+                p{
+                font-weight        : 400;
+                @include mixin.rem(20px);
+                padding            : 1%;
+                @include mixin.mq(pc){
+                padding-bottom: 8%;
+                }
+                @include mixin.mq(tb){
+                    @include mixin.rem(18px);
+                }
+                }
+}
+.l-footer__wrapper{
+                padding-bottom     : 1%;
+                padding-top        : 1%;
+                @include mixin.mq(pc){
+                padding-bottom      : 3%;
+                padding-top         : 2%;
+                }
+                
+}
