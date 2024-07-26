@@ -19,11 +19,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include mixin.rate(width,677px,292px);
-  margin: 5% 0;
-  border-radius: 10%;
+  width: 60%;
+  margin: 10% auto 5% auto;
+  padding: 17px 20px;
+  border-radius: 35px;
   background-color: base.$White;
   cursor: pointer;
+  @include mixin.mq(pc){
+    width: 50%;
+  }
   }
 }
 @include mixin.mq(tb){

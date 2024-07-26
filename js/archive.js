@@ -24,13 +24,12 @@ document.querySelector('.l-humberger__toggle').addEventListener('click',function
 // カードのimg高さ調整
 function adjustBackgroundHeight() {
     const card = document.querySelectorAll('.c-card__img');
-    const cardText = document.querySelector('.c-card__text');
-
-    let totalHeight = cardText.offsetHeight;
-    
-    card.forEach((element) => {
-        element.style.height = totalHeight + 'px';
-    });
+    const cardText = document.querySelectorAll('.c-card__text');
+    for(let i=0; i<cardText.length; i++){
+        let totalHeight = cardText[i].offsetHeight;
+        
+        card[i].style.height = totalHeight + "px";
+    }
 }
 
 // Execute the function after the DOM is fully loaded

@@ -104,7 +104,7 @@ article {
 
 .l-footer__content {
   text-align: center;
-  background: url(../../mainvisual-img/footer.png);
+  background: url(../../imgs/footer.png);
   background-position: 0 -10%;
   color: #FFFFFF;
 }
@@ -261,11 +261,11 @@ article {
   }
 }
 .p-firstimg {
-  background: url(../../mainvisual-img/top-side-1.jpg);
+  background: url(../../imgs/top-side-1.jpg);
 }
 
 .p-secondimg {
-  background: url(../../mainvisual-img/to0-side-2.png);
+  background: url(../../imgs/to0-side-2.png);
 }
 
 .p-map {
@@ -318,7 +318,7 @@ article {
 
 .c-backimg {
   height: 239px;
-  background: url(../../../mainvisual-img/page-title_arcive@2x.jpg) no-repeat;
+  background: url(../../../imgs/page-title_arcive@2x.jpg) no-repeat;
   background-size: cover;
   background-position: 0 50%;
   position: relative;
@@ -355,7 +355,7 @@ article {
   font-style: normal;
   font-size: 1rem;
   margin-left: 0.5rem;
-  margin-top: 1rem;
+  margin-top: 0.6rem;
 }
 .c-backimg__title {
   color: #FFFFFF;
@@ -390,11 +390,17 @@ article {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 43.1314623338%;
-  margin: 5% 0;
-  border-radius: 10%;
+  width: 60%;
+  margin: 10% auto 5% auto;
+  padding: 17px 20px;
+  border-radius: 35px;
   background-color: #FFFFFF;
   cursor: pointer;
+}
+@media screen and (max-width:1001px) {
+  .c-btn__archive {
+    width: 50%;
+  }
 }
 
 @media screen and (max-width:769px) {
@@ -465,7 +471,7 @@ article {
   }
 }
 .c-top {
-  background: url(../../mainvisual-img/mainvisual-pc.jpg) no-repeat;
+  background: url(../../imgs/mainvisual-pc.jpg) no-repeat;
   background-size: cover;
   background-position: 0 50%;
 }
@@ -483,7 +489,7 @@ article {
 
 @media screen and (max-width:769px) {
   .c-top {
-    background: url(../../mainvisual-img/mainvisual-sp@2x.jpg) no-repeat;
+    background: url(../../imgs/mainvisual-sp@2x.jpg) no-repeat;
     background-size: cover;
     background-position: center;
   }
@@ -549,6 +555,11 @@ article {
   font-size: 2.25rem;
   margin-bottom: 2%;
 }
+@media screen and (max-width:769px) {
+  .c-subtext__title {
+    font-size: 1.75rem;
+  }
+}
 .c-subtext__content {
   margin-bottom: 5%;
 }
@@ -558,17 +569,111 @@ article {
   align-items: center;
   margin-bottom: 30px;
 }
+@media screen and (max-width:769px) {
+  .c-card {
+    flex-direction: column;
+  }
+}
 .c-card__img {
   width: 50%;
-  background: url(../../../mainvisual-img/archive_content.png) no-repeat;
+  background: url(../../../imgs/archive_content.png) no-repeat;
   background-size: cover;
+}
+@media screen and (max-width:769px) {
+  .c-card__img {
+    width: 100%;
+    height: 20%;
+  }
 }
 .c-card__text {
   width: 50%;
   background-color: #3C2A10;
-  padding: 11.2526539278%;
+  padding: 4%;
+}
+@media screen and (max-width:769px) {
+  .c-card__text {
+    width: 100%;
+  }
+}
+.c-card__text h2 {
+  font-size: 2.25rem;
+  margin-bottom: 8%;
+}
+@media screen and (max-width:1001px) {
+  .c-card__text h2 {
+    font-size: 1.25rem;
+  }
+}
+.c-card__text h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3%;
+}
+@media screen and (max-width:1001px) {
+  .c-card__text h3 {
+    font-size: 1rem;
+  }
 }
 
+.c-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  gap: 0 15px;
+  padding: 0;
+  list-style-type: none;
+  width: 100%;
+  cursor: pointer;
+}
+.c-list span {
+  display: none;
+}
+.c-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  color: #707070;
+}
+.c-list a.current {
+  color: #FFFFFF;
+}
+.c-list__number {
+  border-radius: 1px;
+  border: 1px solid #707070;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.c-list__number.current {
+  background-color: #3C2A10;
+}
+.c-list__margin {
+  margin-right: 70%;
+}
+
+@media screen and (max-width:769px) {
+  .c-list {
+    gap: 0 5px;
+    justify-content: space-between;
+  }
+  .c-list__top {
+    display: none;
+  }
+  .c-list__number {
+    display: none;
+  }
+  .c-list__bar {
+    display: flex;
+    align-items: center;
+  }
+  .c-list span {
+    display: inline;
+  }
+}
 .u-font__background-title {
   font-weight: 700;
   font-size: 3rem;

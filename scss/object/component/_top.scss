@@ -1,7 +1,7 @@
 @use"../../fundation/mixin";
 
 .c-top {
-  background: url(../../mainvisual-img/mainvisual-pc.jpg) no-repeat;
+  background: url(../../imgs/mainvisual-pc.jpg) no-repeat;
   background-size: cover;
   background-position: 0 50%;
   &__wrapper{
@@ -18,7 +18,7 @@
 }
 @include mixin.mq(tb){
   .c-top {
-    background: url(../../mainvisual-img/mainvisual-sp@2x.jpg) no-repeat;
+    background: url(../../imgs/mainvisual-sp@2x.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     &__title{

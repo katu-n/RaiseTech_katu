@@ -6,6 +6,9 @@
     &__title{
         @include mixin.rem(36px);
         margin-bottom: 2%;
+        @include mixin.mq(tb){
+            @include mixin.rem(28px);
+        }
     }
     &__content{
         margin-bottom: 5%;

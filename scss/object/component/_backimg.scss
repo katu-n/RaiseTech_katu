@@ -3,7 +3,7 @@
 
 .c-backimg{
          height                 :       239px;
-         background             :       url(../../../mainvisual-img/page-title_arcive@2x.jpg) no-repeat;
+         background             :       url(../../../imgs/page-title_arcive@2x.jpg) no-repeat;
          background-size        :       cover;
          background-position    :       0                                                     50%;
          position               :       relative;
@@ -37,7 +37,7 @@
          font-style             :       normal;
          @include               mixin.rem(16px);
          margin-left            :       0.5rem;
-         margin-top             :       1rem;
+         margin-top             :       0.6rem;
 }
 &__title{
          color                  :       base.$White;
