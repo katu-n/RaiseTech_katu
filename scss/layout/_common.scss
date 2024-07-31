@@ -2,6 +2,12 @@
 @use"../fundation/mixin";
 @use"../fundation/base";
 
+body{
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 a{
     text-decoration : none;
 }
@@ -37,4 +43,22 @@ article{
     height          : 380px;
     background-color: base.$Black;
     border          : 1px solid base.$SideBase;
+    background: url(../../imgs/mainvisual-pc.jpg) no-repeat;
+
+    @include mixin.mq(tb){
+    background: url(../../imgs/mainvisual-sp@2x.jpg) no-repeat;
+    }
+}
+.l-common__third-img{
+    height          : 380px;
+    background-color: base.$Black;
+    border          : 1px solid base.$SideBase;
+    background: url(../../imgs/single.png) no-repeat;
+}
+
+.l-common__four-img{
+    height          : 380px;
+    background-color: base.$Black;
+    border          : 1px solid base.$SideBase;
+    background: url(../../imgs/page.png) no-repeat;
 }

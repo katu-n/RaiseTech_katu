@@ -4,13 +4,31 @@
 .c-subtext{
     margin-top: 5%;
     &__title{
-        @include mixin.rem(36px);
         margin-bottom: 2%;
+    }
+    h2{
+        @include mixin.rem(36px);
         @include mixin.mq(tb){
             @include mixin.rem(28px);
         }
     }
+    h3{
+        @include mixin.rem(28px);
+        @include mixin.mq(tb){
+            @include mixin.rem(24px);
+        }
+    }
+    h4,h5,h6{
+        @include mixin.rem(20px);
+    }
+
     &__content{
         margin-bottom: 5%;
+    }
+    &__margin{
+        margin-top: 5%;
+        &:last-child{
+            margin-bottom: 5%;
+        }
     }
 }

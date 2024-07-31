@@ -1,0 +1,20 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+
+.c-reference{
+    padding: 5%;
+    background-color: base.$SingleBase;
+    &__content{
+        margin-bottom: 5%;
+    }
+    &__link{
+        display: flex;
+        gap: 0 10px;
+    }
+    &__circle{
+        text-decoration: underline;
+    }
+    &__margin{
+        margin-left: 2%;
+    }
+}

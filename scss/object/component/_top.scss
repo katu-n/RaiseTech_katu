@@ -1,7 +1,6 @@
 @use"../../fundation/mixin";
 
 .c-top {
-  background: url(../../imgs/mainvisual-pc.jpg) no-repeat;
   background-size: cover;
   background-position: 0 50%;
   &__wrapper{
@@ -10,15 +9,33 @@
   align-items: center;
   margin-left: 5%;
   }
+  &__inner{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 5%;
+    @include mixin.mq(pc){
+      margin-left: 10%;
+    }
+  }
   &__title{
   color: #FFFFFF;
   align-items: center;
   @include mixin.rem(40px);
   }
+  &__single{
+    background-size: cover;
+    background-position: center;
+  }
+}
+@include mixin.mq(pc){
+  .c-top__single{
+    background-size: 150%;
+    background-position: center;
+  }
 }
 @include mixin.mq(tb){
   .c-top {
-    background: url(../../imgs/mainvisual-sp@2x.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     &__title{

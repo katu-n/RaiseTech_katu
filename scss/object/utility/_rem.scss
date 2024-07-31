@@ -28,5 +28,12 @@
 }
 
 .u-36 {
-  @include mixin.rem(36px)
+  @include mixin.rem(36px);
+}
+
+.u-img-title{
+  @include mixin.rem(60px);
+  @include mixin.mq(tb){
+    @include mixin.rem(36px);
+  }
 }
