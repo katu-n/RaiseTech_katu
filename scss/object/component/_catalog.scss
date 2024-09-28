@@ -1,0 +1,20 @@
+@use"../../fundation/mixin";
+
+.c-catalog{
+        margin-bottom: 5%;
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        width: 48%;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+        p{
+            width: 100%;
+            text-align: left;
+        }
+    }
+}

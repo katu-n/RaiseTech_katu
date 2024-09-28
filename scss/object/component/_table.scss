@@ -1,0 +1,25 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+
+.c-table{
+    margin-top: 5%;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    border-spacing: 0;
+    & th{
+        padding: 15px;
+        border: 1px solid base.$SideBase;
+        font-weight: 400;
+        &:first-child{
+            width: 30%;
+        }
+    }
+    & td{
+        padding: 15px;
+        border: 1px solid base.$SideBase;
+        &:first-child{
+            width: 30%;
+        }
+    }
+}

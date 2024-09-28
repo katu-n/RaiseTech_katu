@@ -1,0 +1,64 @@
+// 共通部分
+@use"../fundation/mixin";
+@use"../fundation/base";
+
+body{
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+a{
+    text-decoration : none;
+}
+ul{
+    list-style      : none;
+}
+iframe{
+    width           : 100%;
+}
+.l-main__wrapper{
+    display         : flex;
+    flex-direction  : row;
+    width           : 100%;
+    margin          : 0;
+    padding         : 0;
+}
+
+aside{
+    width: 24%;
+    background-color: base.$btnBase;
+}
+article{
+    background-color: base.$BackBase;
+}
+
+.l-main__colum{
+ display            : flex;
+ flex-direction     : column;
+ width              : 100%;
+}
+
+.l-common__second-img{
+    height          : 380px;
+    background-color: base.$Black;
+    border          : 1px solid base.$SideBase;
+    background: url(../../imgs/mainvisual-pc.jpg) no-repeat;
+
+    @include mixin.mq(tb){
+    background: url(../../imgs/mainvisual-sp@2x.jpg) no-repeat;
+    }
+}
+.l-common__third-img{
+    height          : 380px;
+    background-color: base.$Black;
+    border          : 1px solid base.$SideBase;
+    background: url(../../imgs/single.png) no-repeat;
+}
+
+.l-common__four-img{
+    height          : 380px;
+    background-color: base.$Black;
+    border          : 1px solid base.$SideBase;
+    background: url(../../imgs/page.png) no-repeat;
+}

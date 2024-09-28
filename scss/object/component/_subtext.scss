@@ -1,0 +1,34 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+
+.c-subtext{
+    margin-top: 4%;
+    &__title{
+        margin-bottom: 1%;
+    }
+    h1{
+        @include mixin.rem(35px);
+        @include mixin.mq(tb){
+            @include mixin.rem(27px);
+        }
+    }
+    h2{
+        @include mixin.rem(27px);
+        @include mixin.mq(tb){
+            @include mixin.rem(23px);
+        }
+    }
+    h3,h5,h6{
+        @include mixin.rem(19px);
+    }
+
+    &__content{
+        margin-bottom: 4%;
+    }
+    &__margin{
+        margin-top: 4%;
+        &:last-child{
+            margin-bottom: 4%;
+        }
+    }
+}

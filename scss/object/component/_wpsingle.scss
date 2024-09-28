@@ -1,0 +1,52 @@
+@use"../../fundation/mixin";
+
+//singleページ用CSS
+article.common-wrapper{
+    @include mixin.rate(margin-left,1553px,100px);
+    @include mixin.rate(margin-right,1553px,100px);
+    @include mixin.rate(margin-bottom,1553px,100px);
+
+    h2{
+        @include mixin.rem(36px);
+        @include mixin.mq(tb){
+            @include mixin.rem(28px);
+        }
+    }
+    h3{
+        @include mixin.rem(28px);
+        @include mixin.mq(tb){
+            @include mixin.rem(24px);
+        }
+    }
+    h4,h5,h6{
+        @include mixin.rem(20px);
+
+    }
+
+    img{
+        object-fit: cover;
+    }
+    
+    .wp-block-list ol{
+        margin-left: 6%;
+        &:nth-child(2){
+            margin-left: 9.5%;
+        }
+    }
+    .wp-block-list ul{
+        margin-left: 3%;
+        list-style-type: none;
+        &:nth-child(2){
+            margin-left: 6.5%;
+        }
+    }
+    .wp-block-code{
+        padding: 5%;
+    }
+
+    .wp-block-table{
+        width: 100%;
+        border-collapse: collapse;
+        
+    }
+}

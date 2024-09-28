@@ -1,0 +1,63 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+
+.c-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    gap: 0 15px;
+    padding: 0;
+    list-style-type: none;
+    width: 100%;
+    cursor: pointer;
+    span{
+        display: none;
+    }
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 2rem;
+        height: 2rem;
+        color: base.$SideBase;
+        &.current{
+            color:  base.$White;
+        }
+    }
+    &__number{
+        border-radius: 1px;
+        border: 1px solid base.$SideBase;
+        box-sizing: border-box;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        &.current {
+            background-color: base.$FontBase;
+        }
+    }
+    &__margin{
+        margin-right: 70%;
+    }
+}
+@include mixin.mq(tb){
+    .c-list{
+        gap: 0 5px;
+        justify-content: space-between;
+        &__top{
+        display: none;           
+        }
+        &__number{
+            display: none;
+        }
+        &__bar{
+            display: flex;
+            align-items: center;
+        }
+        span{
+            display: inline;
+        }
+    }
+
+}

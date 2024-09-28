@@ -1,0 +1,23 @@
+@use"../../fundation/base";
+@use"../../fundation/mixin";
+
+.p-about__flex {
+  margin: 8%;
+  display: flex;
+  justify-content: space-between;
+}
+
+@include mixin.mq(tb) {
+  .p-about__flex {
+    flex-direction: column;
+    margin: 5%;
+  }
+}
+
+.p-firstimg {
+  background: url(../../imgs/top-side-1.jpg);
+}
+
+.p-secondimg {
+  background: url(../../imgs/to0-side-2.png);
+}

@@ -1,0 +1,31 @@
+@use"../../fundation/mixin";
+
+.c-inner{
+    &__background     {
+    min-height            : 1197px;
+    position          : relative;
+    &-title{
+    color             : #FFFFFF;
+    margin-top        : 2%;
+    margin-left       : 1.7%;
+    h1{
+    margin-bottom     : 4%;   
+    }
+    }
+    }
+    &__flow-bottom-text{
+    background-color: #ffffff;
+    opacity           : 0.8;
+    margin            : 5%;
+    padding           : 4%;
+    position          : absolute;
+    left              : 0;
+    right             : 0;
+    word-wrap         : break-word;
+    h3{
+    margin-bottom     : 4%; 
+    }
+    }
+
+}
+

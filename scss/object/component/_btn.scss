@@ -1,0 +1,53 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+
+
+.c-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 27%;
+  max-width: 140px;
+  margin: 5% 0;
+  height: 46px;
+  border: 1px solid #707070;
+  border-radius: 10px;
+  background-color: #F2EDE9;
+  color: #707070;
+  cursor: pointer;
+  &__archive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin: 10% auto 5% auto;
+  padding: 17px 20px;
+  border-radius: 35px;
+  background-color: base.$White;
+  cursor: pointer;
+  @include mixin.mq(pc){
+    width: 50%;
+  }
+  }
+  &__single{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    margin-top:5%;
+    margin-bottom: 5%;
+    padding: 1.8em 4em;
+    border: 1px solid base.$SideBase;
+    border-radius: 15px;
+    background-color: #f2ede9;
+    color: base.$FontBase;
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+}
+@include mixin.mq(tb){
+  .c-btn {
+    width: 28.3018867925%;
+  }
+}

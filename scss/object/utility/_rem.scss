@@ -1,0 +1,39 @@
+@use"../../fundation/mixin";
+
+.u-side-title {
+  @include mixin.rem(80px);
+  color: #FFFFFF;
+}
+@include mixin.mq(pc){
+  .u-side-title {
+    @include mixin.rem(44px);
+  }
+}
+
+.u-20 {
+  @include mixin.rem(20px);
+}
+
+.u-24 {
+  @include mixin.rem(24px);
+}
+
+.u-menu {
+  @include mixin.rem(34px);
+}
+@include mixin.mq(tb){
+  .u-menu {
+    @include mixin.rem(20px);
+  }
+}
+
+.u-36 {
+  @include mixin.rem(36px);
+}
+
+.u-img-title{
+  @include mixin.rem(60px);
+  @include mixin.mq(tb){
+    @include mixin.rem(36px);
+  }
+}

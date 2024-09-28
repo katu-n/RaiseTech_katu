@@ -1,0 +1,42 @@
+@use"../../fundation/mixin";
+@use"../../fundation/base";
+.c-card{
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    margin-bottom: 30px;
+    @include mixin.mq(tb){
+        flex-direction: column;
+    }
+    &__img{
+        width: 50%;
+        // background: url(../../../imgs/archive_content.png) no-repeat;
+        background-size: cover;
+        @include mixin.mq(tb){
+            width: 100%;
+            height: 20%;
+        }
+    }
+    &__text{
+        width: 50%;
+        background-color: base.$FontBase;
+        padding: 4%;
+        @include mixin.mq(tb){
+            width: 100%;
+        }
+        h2 {
+            @include mixin.rem(36px);
+            margin-bottom: 8%;
+            @include mixin.mq(pc){
+                @include mixin.rem(20px);
+            }
+        }
+        h3 {
+            @include mixin.rem(24px);
+            margin-bottom: 3%;
+            @include mixin.mq(pc){
+                @include mixin.rem(16px);
+            }
+        }
+    }
+}
